@@ -1,0 +1,14 @@
+{
+  "version": “1.0.0”,
+  "description": "A package containing scripts to configure Ready Player Me for Magic Leap 2.",
+  "displayName": “Magic Leap 2 Ready Player Me”,
+  "keywords": [
+    "MagicLeap",
+    "Magic",
+    "Leap"
+  ],
+  "category": "XR",
+  "licensesUrl": "https://www.magicleap.com/software-license-agreement-ml2",
+  "name": "com.magicleap.readyplayerme”,
+  "unity": "2022.2"
+}
