@@ -45,7 +45,7 @@ Before you begin, you must:
 
 8. Expand the **XR Rig** and enable the **Right Hand Controller** and **Left Hand Controller** objects.
 
-9. Import the Magic Leap 2 Ready Player Me package[INSERT LINK] into your scene by navigating to **Assets > Import Package > Custom Package** and selecting the MagicLeapReadyPlayerMe.unitypackage file. Select **All** and click **Import**.
+9. Import the [Magic Leap 2 Ready Player Me package](https://github.com/magicleap/MagicLeapReadyPlayerMe/tree/main) into your scene by navigating to **Assets > Import Package > Custom Package** and selecting the MagicLeapReadyPlayerMe.unitypackage file. Select **All** and click **Import**.
 
 10. Head to **Edit > Project Settings > Magic Leap > Permissions** and enable **RECORD_AUDIO, EYE_TRACKING, VOICE_INPUT, EYE_CAMERA and HAND_TRACKING**.
 
