@@ -61,7 +61,7 @@ Before you begin, you must:
 
 4. Drag the newly created audio source into the “Audio Source” field in the **Voice Handler** script on the Avatar.
 
-5. Add the **[EyeTracking](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/AvatarEyeTracking.cs)** and **[HandTrackingEnable](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/HandTrackingEnable.cs)** scripts from the MagicLeapReadyPlayerMe package to the to your Avatar object.
+5. Add the **[EyeTracking](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/AvatarEyeTracking.cs)** and **[HandTrackingEnable](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/HandTrackingEnable.cs)** scripts from the MagicLeapReadyPlayerMe package to your Avatar object.
 
 6. Save the scene.
 
