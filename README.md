@@ -1,6 +1,6 @@
 
 
-# Ready Player Me avatars with Magic Leap 2
+# Ready Player Me for Magic Leap 2
 
 This guide will walk you through how to implement the Ready Player Me VR half-body avatars inside your Unity project for Magic Leap 2.
 
@@ -10,7 +10,7 @@ In this guide you will:
 2. [Use hand tracking to drive the avatar hands](#configuring-hand-tracking-in-your-avatar)
 3. [Use eye tracking to drive eye rotation and blinking](#configuring-eye-tracking-in-your-avatar)
 
-You can use the sample scene to test the project for yourself by swapping out the Avatar - REPLACE ME child of the XR Rig in the ML2_RPM_Demo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
+You can use the sample scene to test the project for yourself by swapping out the "Avatar - REPLACE ME" child of the XR Rig in the ML2ReadyPlayerMeDemo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
 
 :::note
 
@@ -23,18 +23,17 @@ Please check the [Magic Leap 2 version compatibility matrix](/docs/releases/rele
 
 Before you begin, you must:
 
-- Download the Magic Leap 2 Ready Player Me package [LINK NEEDED]
+- Download the [Magic Leap 2 Ready Player Me package](https://github.com/magicleap/MagicLeapReadyPlayerMe/tree/main.)
 - Create a [Ready Player Me VR half-body avatar](https://vr.readyplayer.me/en/avatar)
-- Complete [Eye Calibration](/docs/guides/features/eye-tracking/eye-calibration) for accurate eye tracking on your Magic Leap 2 device
+- Complete [Eye Calibration](https://developer-docs.magicleap.cloud/docs/guides/features/eye-tracking/headset-fit) for accurate eye tracking on your Magic Leap 2 device
 
 ## Setting up your project
 
-1. [Create a new Unity 2022 LTS 3D URP project.](/docs/guides/unity/getting-started/create-a-project)
+1. [Create a new Unity 2022 LTS 3D URP project.](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/create-a-project)
 
-2. [Configure Unity project settings for Magic Leap 2.](/docs/guides/unity/getting-started/configure-unity-settings)
+2. [Configure Unity project settings for Magic Leap 2.](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/configure-unity-settings)
 
 3. Copy the link to your [Ready Player Me VR avatar](https://vr.readyplayer.me/en/avatar).
-
 
 4. Complete Step 1 of the  [Ready Player Me Unity Quickstart guide](https://docs.readyplayer.me/ready-player-me/integration-guides/unity/quickstart) to add the Ready Player Me package into your project. You may need to restart the project for the package to take effect.
 
@@ -57,9 +56,12 @@ Before you begin, you must:
 1. Rename the imported Ready Player Me avatar object in your scene to something like “Avatar” and make it a child of the **Main Camera** object inside the **XR Rig** prefab.
 
 2. Select the Avatar object and in the inspector window and **disable** the Eye Animation Handler.
+
 3. With the Avatar object selected, click **“Add Component”** and add an **Audio Source**.
+
 4. Drag the newly created audio source into the “Audio Source” field in the **Voice Handler** script on the Avatar.
-5. Add the **EyeTracking** and **HandTrackingEnable** scripts from the ML2_RPM package to the to your Avatar object.
+
+5. Add the **[EyeTracking](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/AvatarEyeTracking.cs)** and **[HandTrackingEnable](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/HandTrackingEnable.cs)** scripts from the MagicLeapReadyPlayerMe package to the to your Avatar object.
 
 6. Save the scene.
 
@@ -68,7 +70,6 @@ Before you begin, you must:
 1. Expand the Avatar object until you find the **RightEye** and **LeftEye** children of the Armature (located under Armature>Hips>Spine>Neck>Head).
 
 2. With the Avatar object selected, drag and drop the RightEye child of the Armature into the **Right Eye Bone** field and the LeftEye child into the **Left Eye Bone** field of the Eye Tracking script on the Avatar.
-
 
 ## Configuring Hand Tracking in your avatar
 
@@ -106,5 +107,5 @@ This will make the hands of the Ready Player Me avatar move along with the detec
 
 - [Ready Player Me full body avatars](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars)
 - [Ready Player Me Unity documentation](https://docs.readyplayer.me/ready-player-me/integration-guides/unity)
-- [Magic Leap 2 Eye Tracking](/docs/guides/unity/input/eye-tracking/eye-tracking-overview)
-- [Magic Leap 2 Hand Tracking](/docs/guides/unity/input/hand-tracking/unity-hand-tracking-overview)
+- [Magic Leap 2 Eye Tracking](https://developer-docs.magicleap.cloud/docs/guides/unity/input/eye-tracking/eye-tracking-overview)
+- [Magic Leap 2 Hand Tracking](https://developer-docs.magicleap.cloud/docs/guides/unity/input/hand-tracking/unity-hand-tracking-overview)
